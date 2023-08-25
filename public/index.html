@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+    <!-- lang="en" specifies the language of the page for help with search engines-->
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KLFC03JGT"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6KLFC03JGT');
+        </script>
+        
+        <title>Graeme Dockrill | Home</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        
+        <meta name="Author" content="Graeme Dockrill">
+    </head>
+
+    <body>
+
+        <div class="indexheader">
+            <h2>John <span style="color:#2E74B5">Graeme Dockrill</span> | Mechatronics Engineering</h2>
+            <h3>3rd Year Student at UBC | graeme.dockrill01@gmail.com</h3>
+        </div>
+
+        <!--Create a menu at the top of the page-->
+        <div id="navbar">
+            <a class="active" href="/index.html">Home</a>
+            <a href="/resume.html">Resume</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/courses.html">Courses</a>
+            <a href="/pictures.html">Pictures</a>
+            <a href="/about.html">About</a>
+            <a href="https://www.linkedin.com/in/graemedockrill/" target="_blank">Linkedin</a>
+            <a href="mailto:graeme.dockrill01@gmail.com" title="graeme.dockrill01@gmail.com">Email Me</a>
+        </div>
+
+        <div class="content">
+
+            <div class="homemain">
+                <h1 style="text-align:center;">Welcome to My Website!</h1>
+                <hr>
+                <p style="text-align:center;">Glad to have you here, take a look around!</p>
+
+                <div class="picrow">
+                    <div class="piccolumn">
+                        <a href="/projects.html">
+                            <div class="picturecardcontent">
+                                <img src="images/booth.jpg" alt="Projects" style="width:100%" class="picture">
+
+                                <div class="overlay" style="opacity: 0.6;">
+                                    <div class="picturecardblurb">
+                                        Projects
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="piccolumn">
+                        <a href="/resume.html">
+                            <div class="picturecardcontent">
+                                <img src="images/resumepic.jpg" alt="Resume" style="width:100%" class="picture">
+
+                                <div class="overlay" style="opacity: 0.6;">
+                                    <div class="picturecardblurb">
+                                        Resume
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="picrow">
+                    <div class="piccolumn">
+                        <a href="https://www.linkedin.com/in/graemedockrill/" target="_blank">
+                            <div class="picturecardcontent">
+                                <img src="images/linkedinprofile.jpg" alt="Linkedin" style="width:100%" class="picture">
+
+                                <div class="overlay" style="opacity: 0.6;">
+                                    <div class="picturecardblurb">
+                                        Linkedin
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="piccolumn">
+                        <a href="/about.html">
+                            <div class="picturecardcontent">
+                                <img src="images/bus.jpg" alt="About" style="width:100%" class="picture">
+
+                                <div class="overlay" style="opacity: 0.6;">
+                                    <div class="picturecardblurb">
+                                        About
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© Copyright 2022 Graeme Dockrill</p>
+        </div>
+
+        <!--JavaScript for keeping the menu bar attached to the top of the screen-->
+        <script>
+            window.onscroll = function() {StickyBar()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function StickyBar(){
+                if(window.pageYOffset >= sticky){
+                    navbar.classList.add("sticky")
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <script type="module">
+
+            // Import the functions you need from the SDKs you need
+        
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        
+            // TODO: Add SDKs for Firebase products that you want to use
+        
+            // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        
+            // Your web app's Firebase configuration
+        
+            const firebaseConfig = {
+        
+            apiKey: "AIzaSyD9IY42OqZVft0G-RnTfg_gH1neTS5UDN0",
+        
+            authDomain: "portfolio-website-c1dc9.firebaseapp.com",
+        
+            projectId: "portfolio-website-c1dc9",
+        
+            storageBucket: "portfolio-website-c1dc9.appspot.com",
+        
+            messagingSenderId: "94392532432",
+        
+            appId: "1:94392532432:web:d66a8858a2808711830dd5"
+        
+            };
+        
+        
+            // Initialize Firebase
+        
+            const app = initializeApp(firebaseConfig);
+        
+        </script>
+
+    </body>
+</html> 

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+    <!-- lang="en" specifies the language of the page for help with search engines-->
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KLFC03JGT"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6KLFC03JGT');
+        </script>
+        
+        <title>Graeme Dockrill | 3D Printed Tank</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+        
+        <meta name="Author" content="Graeme Dockrill">
+    </head>
+
+    <body>
+
+        <div class="tankheader">
+            <h2>John <span style="color:#2E74B5">Graeme Dockrill</span> | Mechatronics Engineering</h2>
+            <h3>3rd Year Student at UBC | graeme.dockrill01@gmail.com</h3>
+        </div>
+
+        <!--Create a menu at the top of the page-->
+        <div id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../resume.html">Resume</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../courses.html">Courses</a>
+            <a href="../pictures.html">Pictures</a>
+            <a href="../about.html">About</a>
+            <a href="https://www.linkedin.com/in/graemedockrill/" target="_blank">Linkedin</a>
+            <a href="mailto:graeme.dockrill01@gmail.com" title="graeme.dockrill01@gmail.com">Email Me</a>
+
+            <div id="secondary">
+                <a class="active">3D Printed Tank</a>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="aprojmain">
+                <h1 style="text-align:center;">3D Printed Tank</h1>
+                <p style="font-size: 125%; text-align: center;">Summer 2021 - Present</p>
+                <hr>
+
+                <!--This stuff is for the project overview header-->
+                <div class="resumerow">
+
+                    <div class="resumecol">
+
+                        <div class="projinfo">
+
+                            <table class="projtable">
+                                <tr>
+                                    <td>
+                                        <h3 style="font-size: 150%; text-align: center;">Project Overview</h3>
+                                    </td>
+                                    <td colspan="2">
+                                        <h3 style="font-size: 150%; text-align: center;">Developed Skills</h3>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ol>
+                                            <li>Researched and procured compatible motors, speed controllers and battery</li>
+                                            <li>Designed and programmed an Arduino radio control circuit for motors</li>
+                                            <li>Soldered battery splitter cable and connectors for motor controllers</li>
+                                            <li>Designed and 3D printed a 40:1 compound reduction gear box</li>
+                                            <li>Designed and prototyped a sprocket and tread to ensure they mesh properly </li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Mechanical Design</li>
+                                            <li>Components Specification</li>
+                                            <li>CAD (OnShape)</li>
+                                            <li>Additive Manufacturing</li>
+                                            <li>Rapid Prototyping</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Circuit Design</li>
+                                            <li>Circuit Debugging</li>
+                                            <li>Arduino Programming</li>
+                                            <li>Soldering</li>
+                                            <li>Motor Controls</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projobjective">
+                <h3 style="font-size: 150%; text-align: center;">Objective</h3>
+                <p>This project was done as a passion project to apply my current skills and learn some more about mechanical design, 3D printing, and control circuits. My goal was to create a 3D printed tank that can be remotely operated.</p>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third image">
+                        <img src="projectimages/Tank/Motor.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Chosen BLDC Motor</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Choosing Power Electronic Components</h3>
+                        <p>To start off the project, I chose which motors, speed controllers and battery I wanted to use.</p>
+                        <p>I chose a couple of hobby 360KV BLDC motors and two 30A helicopter speed controllers (for their bidirectional ability).</p>
+                        <p>I ended up choosing to use a 14.8 V 6000mAh battery to power the entire tank.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Choosing Control Circuit Electronics</h3>
+                        <p>Before constructing the radio control circuit, I chose which components I wanted to use.</p>
+                        <p>I decided to use Arduino nanos since they are just as capable as an Arduino UNO, but they are much smaller.</p>
+                        <p>For the radio transceivers, I used NRF 24L01 modules, since they are quite popular and have a lot of documentation.</p>
+                    </div>
+
+                    <div class="third image">
+                        <img src="projectimages/Tank/Arduinonano.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Arduino Nano</p>
+                    </div>
+                </div>
+
+                <br>
+                
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half image">
+                        <img src="projectimages/Tank/RadioControlCircuit.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Arduino Radio Control Circuits</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Control Circuit</h3>
+                        <p>As the next step, I began working on designing the radio control circuit and implementing it using the NRF24L01 modules and Arduino nanos.</p>
+                        <p>I found some basic examples online and read the modules' datasheet to create my own program. I tested it by trying to control a small stepper motor.</p>
+                        <p>I ran into some issues with the signal dropping and the receiver not picking it up again.</p>
+                        <p>To fix this, I implemented a loop that checks whether the signal is detected, and if it is not, it will continuously search for the signal.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Soldering Connections</h3>
+                        <p>Now that I had the control circuit working, I began soldering connectors for the motor and battery.</p>
+                        <p>I soldered 6 small connectors between the motor and speed controller for each controller.</p>
+                        <p>I soldered and heat shrinked a power splitting cable that allows the battery to power both speed controllers in parallel.</p>
+                    </div>
+
+                    <div class="half image">
+                        <img src="projectimages/Tank/Completesoldering.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">All soldered components</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third projpageimage">
+                        <img src="projectimages/Tank/Motorcontroller complete.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Close-up of soldered motor controller</p>
+                    </div>
+
+                    <div class="third projpageimage">
+                        <img src="projectimages/Tank/Powercablesplitter.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Close-up of battery splitter cable</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half image">
+                        <img src="projectimages/Tank/Motormount.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Testing Motors with Control Circuit</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Testing Motors with Control Circuit</h3>
+                        <p>To test the motors and to prevent them from flying off my desk due to any issues with the control system, I created and 3D printed testing jig.</p>
+                        <p>After testing the circuit, I found a lot of noise in the radio signal on the receiving side. I solved it by adding a capacitor in parallel with the transceiver's supply voltage and ground on both sides.</p>
+                        <p>When testing the range of the radio, it still worked from 2 floors down in my basement.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Concepts and Designing of Gear Box</h3>
+                        <p>To acheive the required torque and speed from the motor, I needed to create a gearbox with a 40:1 reduction.</p>
+                        <p>I created concept sketches for the layout and dimensions of the gear train, then modelled it in OnShape.<p>
+                        <p>To complete the model, I found some off-the-shelf components (such as bearings and rods) to use.</p>
+                        <p>After designing the model, I 3D printed it and assembled it.</p>
+                        <p>I ran into a couple issues with the friction between the gears. The gears were printed slightly too large, so they were experiencing excessive radial loads.</p>
+                        <p>These issues were fixed by adjusting the size of the gears and by adding spacers between the gear faces.</p>
+                    </div>
+
+                    <div class="half image">
+                        <img src="projectimages/Tank/Geartrainsketch.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Gear Train Concept Sketches</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third projpageimage">
+                        <img src="projectimages/Tank/Gearboxiso.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">OnShape model of gear box</p>
+                    </div>
+
+                    <div class="third projpageimage">
+                        <img src="projectimages/Tank/Geartrain.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Invisible enclosure</p>
+                    </div>
+
+                    <div class="third projpageimage">
+                        <img src="projectimages/Tank/Printedgearbox.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Final printed gear box</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third image">
+                        <img src="projectimages/Tank/Trackssketch.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Concept sketches of sprocket and tracks</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Concepts for Sprocket and Tracks</h3>
+                        <p>For the sprocket and track system, I created some concept sketches. The main goals were for the track links to properly mesh with the sprocket, and for there to be enough room to clear the chassis.</p>
+                        <p>I designed and modelled a sprocket and its links in OnShape and 3D printed some prototypes to test how well they meshed in real life.</p>
+                        <p>After the testing was complete, and the links were adjusted to fit properly, I printed 40 links to create a full track .</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third projpageimage">
+                        <img src="projectimages/Tank/Sprocketiso.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">OnShape model of sprocket</p>
+                    </div>
+
+                    <div class="third projpageimage">
+                        <img src="projectimages/Tank/Sprocketright.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Side view of sprocket</p>
+                    </div>
+
+                    <div class="third projpageimage">
+                        <img src="projectimages/Tank/Printedtracks.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Printed track links</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Next Steps...</h3>
+                        <p>Since this project has currently been put on hold during the school term, I have a few ideas for the next steps.</p>
+                        <p>I will design a suspension system for the tracks.<p>
+                        <p>I will create a PCB board and a controller for the radio control circuit.</p>
+                    </div>
+
+                    <div class="third image">
+                        <img src="projectimages/Tank/Printedgearboxfront.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Gear train with sprocket</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="box">
+                    <div class="half projpageimage">
+                        <img src="projectimages/Tank/Tankmodel.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">OnShape assembly of tank so far</p>
+                    </div>
+
+                    <div class="half projpageimage">
+                        <img src="projectimages/Tank/Tankmodeliso.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Isometric view of tank model</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <hr>
+
+                <!--Final remarks-->
+                <div class="resumerow">
+
+                    <div class="resumecol">
+
+                        <div class="projinfo">
+
+                            <h3 style="font-size: 150%; text-align: center;">Final Remarks</h3>
+                            <p style="text-align: center;">This project is in progress.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© Copyright 2022 Graeme Dockrill</p>
+        </div>
+
+        <!--JavaScript for keeping the menu bar attached to the top of the screen-->
+        <script>
+            window.onscroll = function() {StickyBar()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function StickyBar(){
+                if(window.pageYOffset >= sticky){
+                    navbar.classList.add("sticky")
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <script type="module">
+
+            // Import the functions you need from the SDKs you need
+        
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        
+            // TODO: Add SDKs for Firebase products that you want to use
+        
+            // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        
+            // Your web app's Firebase configuration
+        
+            const firebaseConfig = {
+        
+            apiKey: "AIzaSyD9IY42OqZVft0G-RnTfg_gH1neTS5UDN0",
+        
+            authDomain: "portfolio-website-c1dc9.firebaseapp.com",
+        
+            projectId: "portfolio-website-c1dc9",
+        
+            storageBucket: "portfolio-website-c1dc9.appspot.com",
+        
+            messagingSenderId: "94392532432",
+        
+            appId: "1:94392532432:web:d66a8858a2808711830dd5"
+        
+            };
+        
+        
+            // Initialize Firebase
+        
+            const app = initializeApp(firebaseConfig);
+        
+        </script>
+
+    </body>
+</html> 

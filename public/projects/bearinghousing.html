@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+    <!-- lang="en" specifies the language of the page for help with search engines-->
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KLFC03JGT"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6KLFC03JGT');
+        </script>
+        
+        <title>Graeme Dockrill | Bearing Housing</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+        
+        <meta name="Author" content="Graeme Dockrill">
+    </head>
+
+    <body>
+
+        <div class="bearinghousingheader">
+            <h2>John <span style="color:#2E74B5">Graeme Dockrill</span> | Mechatronics Engineering</h2>
+            <h3>3rd Year Student at UBC | graeme.dockrill01@gmail.com</h3>
+        </div>
+
+        <!--Create a menu at the top of the page-->
+        <div id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../resume.html">Resume</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../courses.html">Courses</a>
+            <a href="../pictures.html">Pictures</a>
+            <a href="../about.html">About</a>
+            <a href="https://www.linkedin.com/in/graemedockrill/" target="_blank">Linkedin</a>
+            <a href="mailto:graeme.dockrill01@gmail.com" title="graeme.dockrill01@gmail.com">Email Me</a>
+
+            <div id="secondary">
+                <a class="active">Bearing Housing</a>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="aprojmain">
+                <h1 style="text-align:center;">Bearing Housing</h1>
+                <p style="font-size: 125%; text-align: center;">October 2018</p>
+                <hr>
+
+                <!--This stuff is for the project overview header-->
+                <div class="resumerow">
+
+                    <div class="resumecol">
+
+                        <div class="projinfo">
+
+                            <table class="projtable">
+                                <tr>
+                                    <td>
+                                        <h3 style="font-size: 150%; text-align: center;">Project Overview</h3>
+                                    </td>
+                                    <td colspan="2">
+                                        <h3 style="font-size: 150%; text-align: center;">Developed Skills</h3>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ol>
+                                            <li>Redesigned an existing bearing housing for UBC Supermileage using provided loading conditions</li>
+                                            <li>Created a SolidWorks model of the part and conducted SolidWorks FEA on it</li>
+                                            <li>Created a SolidWorks drawing so the part could be machined by the team</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>SolidWorks Design</li>
+                                            <li>SolidWorks FEA</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Drafting</li>
+                                            <li>Caliper Measurement</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projobjective">
+                <h3 style="font-size: 150%; text-align: center;">Objective</h3>
+                <p>This project was assigned to me by my team lead in the powertrain subteam of UBC Supermileage. I was tasked with redesigning a bearing housing and reducing its weight without comprimising the strength of the part.</p>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third image">
+                        <img src="projectimages/Bearinghousing/oldhousing.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">The original bearing housing</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">The Original Housing</h3>
+                        <p>With my task clear and the loading conditions known, I set out to measure the locations of the holes on the old housing and to record its mass so I wouuld have a baseline.</p>
+                        <p>The original model was not very fully defined, having sketch lines protruding haphazardly throughout.</p>
+                        <p>The existing bearing housing is cut out of Aluminum 6061 and has a mass of 153.69 grams.<p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">The New Housing</h3>
+                        <p>Taking the hole measurements I took from the original housing, I designed a new one in SolidWorks.</p>
+                        <p>As can be seen from the picture on the right, the housing is much smaller and takes less material to produce.</p>
+                        <p>The mass was cut down to 77.97 grams, a reduction of 50%! A significant improvement from the last design, to maximize mileage, every gram counts.</p>
+                    </div>
+
+                    <div class="third image">
+                        <img src="projectimages/Bearinghousing/newhousing.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">The new bearing housing</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third image">
+                        <img src="projectimages/Bearinghousing/newhousingsim.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">FEA simulation on the new housing</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Bearing Housing Stress Test</h3>
+                        <p>Before an engineering drawing is created and the part can be machined, the part must pass a safety factor of 5. So a stress test is conducted in SolidWorks using the expected maximum load.</p>
+                        <p>Through stress testing, the part passed the required safety factor of 5.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Draft for Machining</h3>
+                        <p>Using the built-in drafting tools in SolidWorks, I drafted and properly dimensioned the part, making sure to avoid any extraneous measurements.</p>
+                        <p>With the produced drawings, the part was properly machined and fitted to the prototype vehicle.</p>
+                    </div>
+
+                    <div class="half image">
+                        <img src="projectimages/Bearinghousing/newhousingdraft.png" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Drawing of housing</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half projpageimage">
+                        <img src="projectimages/Bearinghousing/protocar.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Prototype car at competition with housing</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!--Final remarks-->
+                <div class="resumerow">
+
+                    <div class="resumecol">
+
+                        <div class="projinfo">
+
+                            <h3 style="font-size: 150%; text-align: center;">Final Remarks</h3>
+                            <p">After the part was manufactured and fit on the prototype car, along with the hard work of the entire team, we placed 2nd in the SAE competition that year.</p>
+                            <p>Since I created this part in my first year of studying engineering, now that I am in my third year, I would have done a few things differently.<p>
+                            <p>I have a greater understanding of stress concentrations and machnining, so I would have added fillets to any sharp edges in the part and I would have machined it myself.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© Copyright 2022 Graeme Dockrill</p>
+        </div>
+
+        <!--JavaScript for keeping the menu bar attached to the top of the screen-->
+        <script>
+            window.onscroll = function() {StickyBar()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function StickyBar(){
+                if(window.pageYOffset >= sticky){
+                    navbar.classList.add("sticky")
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <script type="module">
+
+            // Import the functions you need from the SDKs you need
+        
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        
+            // TODO: Add SDKs for Firebase products that you want to use
+        
+            // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        
+            // Your web app's Firebase configuration
+        
+            const firebaseConfig = {
+        
+            apiKey: "AIzaSyD9IY42OqZVft0G-RnTfg_gH1neTS5UDN0",
+        
+            authDomain: "portfolio-website-c1dc9.firebaseapp.com",
+        
+            projectId: "portfolio-website-c1dc9",
+        
+            storageBucket: "portfolio-website-c1dc9.appspot.com",
+        
+            messagingSenderId: "94392532432",
+        
+            appId: "1:94392532432:web:d66a8858a2808711830dd5"
+        
+            };
+        
+        
+            // Initialize Firebase
+        
+            const app = initializeApp(firebaseConfig);
+        
+        </script>
+
+    </body>
+</html> 

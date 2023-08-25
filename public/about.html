@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+    <!-- lang="en" specifies the language of the page for help with search engines-->
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KLFC03JGT"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6KLFC03JGT');
+        </script>
+
+        <title>Graeme Dockrill | Home</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        
+        <meta name="Author" content="Graeme Dockrill">
+    </head>
+
+    <body>
+
+        <div class="aboutheader">
+            <h2 style="color:#ffffff;">John <span style="color:#2E74B5">Graeme Dockrill</span> | Mechatronics Engineering</h2>
+            <h3 style="color:#ffffff;">3rd Year Student at UBC | graeme.dockrill01@gmail.com</h3>
+        </div>
+
+        <!--Create a menu at the top of the page-->
+        <div id="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/resume.html">Resume</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/courses.html">Courses</a>
+            <a href="/pictures.html">Pictures</a>
+            <a class="active" href="/about.html">About</a>
+            <a href="https://www.linkedin.com/in/graemedockrill/" target="_blank">Linkedin</a>
+            <a href="mailto:graeme.dockrill01@gmail.com" title="graeme.dockrill01@gmail.com">Email Me</a>
+        </div>
+
+        <div class="content">
+
+            <div class="homemain">
+                <h1 style="text-align:center;">About Graeme Dockrill</h1>
+                <hr>
+
+                <div class="box">
+                    <div class="half image">
+                        <img src="images/BesidePlane.PNG" class="imageborder" style="width:100%">
+                    </div>
+
+                    <div class="half text">
+                        <p>Hi! My name is Graeme Dockrill,</p>
+                        <p>I am a third year student studying mechatronics engineering at the University of British Columbia.</p>
+                        <p>I am passionate about all things related to engineering, with a greater focus in robotics and mechanical engineering. I like to try new things, push myself out of my comfort zone, and I am always eager to learn new things!</p>
+                        <P>Some of my hobbies and interests include:</P>
+                        <ul>
+                            <li>Hiking/camping</li>
+                            <li>Long distance cycling</li>
+                            <li>Swimming</li>
+                            <li>Personal projects</li>
+                            <li>Skiing</li>
+                            <li>Travelling</li>
+                        </ul>
+                        <P>I have also been learning German through courses at UBC and on my own time. My dream is to eventually get a job or internship there.</P>
+                        <P>I am so glad to have you on my website! If you have any questions or concerns, please do not hesistate to reach out!.</P>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© Copyright 2022 Graeme Dockrill</p>
+        </div>
+
+        <!--JavaScript for keeping the menu bar attached to the top of the screen-->
+        <script>
+            window.onscroll = function() {StickyBar()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function StickyBar(){
+                if(window.pageYOffset >= sticky){
+                    navbar.classList.add("sticky")
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <script type="module">
+
+            // Import the functions you need from the SDKs you need
+        
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        
+            // TODO: Add SDKs for Firebase products that you want to use
+        
+            // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        
+            // Your web app's Firebase configuration
+        
+            const firebaseConfig = {
+        
+            apiKey: "AIzaSyD9IY42OqZVft0G-RnTfg_gH1neTS5UDN0",
+        
+            authDomain: "portfolio-website-c1dc9.firebaseapp.com",
+        
+            projectId: "portfolio-website-c1dc9",
+        
+            storageBucket: "portfolio-website-c1dc9.appspot.com",
+        
+            messagingSenderId: "94392532432",
+        
+            appId: "1:94392532432:web:d66a8858a2808711830dd5"
+        
+            };
+        
+        
+            // Initialize Firebase
+        
+            const app = initializeApp(firebaseConfig);
+        
+        </script>
+
+    </body>
+</html> 

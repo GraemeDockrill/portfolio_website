@@ -1,0 +1,526 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f1f1f1;
+    /*background-color:rgb(130, 187, 223);*/
+}
+
+a{ text-decoration:none; color: #000}
+
+h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.indexheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('images/Gears.jpg');
+    width:419;
+    height:468;
+    background-position: right center;
+    background-repeat:no-repeat;
+}
+
+.resumeheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('images/Xbed3.jpg');
+    width:419;
+    height:468;
+    background-position: right center;
+    background-repeat:no-repeat;
+}
+
+.text{
+    font-size: x-large;
+    text-align: center;
+}
+
+.projectsheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('images/Assembly.jpg');
+    width:419;
+    height:468;
+    background-position: right top;
+    background-repeat:no-repeat;
+}
+
+.coursesheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('images/Prototype1.jpg');
+    width:419;
+    height:468;
+    background-position: right top;
+    background-repeat:no-repeat;
+}
+
+.picturesheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('images/Plane.JPG');
+    background-size: 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.aboutheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('images/Desert.JPG');
+    background-size: 100%;
+    background-position:center ;
+    background-repeat:no-repeat;
+}
+
+#secondary{
+    overflow: hidden;
+    float: right;
+}
+
+#navbar{
+    overflow: hidden;
+    background-color: #333;
+    z-index:100;
+}
+
+#navbar a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active{
+    background-color: #2E74B5/*#04aa6d*/;
+    color: white;
+}
+
+.content{
+    font-size: 125%;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content{
+    padding-top: 60px;
+}
+
+.sticky + .projectscontent{
+    /*padding-top: 120px;*/
+    padding-top: 60px;
+}
+
+.projectsmain{
+    max-width:1400px;
+    margin: auto;
+    font-size: x-large;
+}
+
+.homemain{
+    max-width:1400px;
+    margin: auto;
+    font-size: x-large;
+}
+
+.resumemain{
+    max-width:1400px;
+    margin: auto;
+    font-size: x-large;
+}
+
+.picturesmain{
+    max-width:1400px;
+    margin: auto;
+    font-size: x-large;
+}
+
+.aprojmain{
+    max-width:1400px;
+    margin: auto;
+    font-size: x-large;
+}
+
+.row{
+    margin: 8px -16px;
+}
+
+/*Add padding between each column*/
+.row,
+.row> .column{
+    padding: 8px;
+}
+
+/*Creating 4 equal columns that float next to each other*/
+.column{
+    float:left;
+    width:25%;
+}
+
+/*Clear floats after rows*/
+.row:after{
+    content:table;
+    clear:both;
+}
+
+.cardcontent{
+    transition: box-shadow .3s;
+    background-color:#ffffff;
+    padding:10px;
+    font-size: 100%;
+    border: 2px solid #555;
+    height:500px;
+    border-radius: 25px;
+}
+
+.coursecardcontent:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.6);
+}
+
+.coursecardcontent{
+    transition: box-shadow .3s;
+    background-color:#ffffff;
+    padding:10px;
+    font-size: 100%;
+    border: 2px solid #555;
+    height:200px;
+    border-radius: 25px;
+}
+
+.cardcontent:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.6);
+}
+
+.resumerow{
+    margin: 8px -16px;
+}
+
+/*Add padding between each column*/
+.resumerow,
+.resumerow> .resumecolumn{
+    padding: 8px;
+}
+
+/*Creating 4 equal columns that float next to each other*/
+.resumecolumn{
+    float:left;
+    width:50%;
+}
+
+/*Clear floats after rows*/
+.resumerow:after{
+    content:table;
+    clear:both;
+}
+
+.info{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    transition: box-shadow .3s;
+    background-color:#ffffff;
+    padding:50px;
+    font-size: 100%;
+    border: 2px solid #555;
+    border-radius: 25px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    flex-basis:40%;
+}
+
+.text{
+    text-align: left;
+    /*font-size: 20px;*/
+    padding-left: 20px;
+}
+
+.picrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+/* Create two equal columns that floats next to each other */
+.piccolumn {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}
+  
+.piccolumn img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Clear floats after the columns */
+.picrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.picturecardcontent{
+    transition: box-shadow .3s;
+    background-color:#ffffff;
+    font-size: 100%;
+    border: 2px solid #555;
+    position: relative;
+}
+
+.picture{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #2E74B5;
+}
+
+.picturecardcontent:hover .overlay {
+    opacity: 0.8;
+}
+
+.picturecardblurb{
+    color: white;
+    font-size: 175%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ledbikelightsheader{
+    background-color: #09010c;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/LEDbikelights.PNG');
+    background-size: 45%;
+    background-position: right;
+    background-repeat:no-repeat;
+}
+
+.span{
+    width:100%;
+}
+
+.half{
+    max-width: 50%;
+}
+
+.third{
+    max-width: 32%;
+}
+
+.projinfo{
+    align-items:center;
+    justify-content: center;
+    transition: box-shadow .3s;
+    background-color:#ffffff;
+    padding:10px;
+    font-size: 100%;
+    border: 2px solid #555;
+    border-radius: 25px;
+}
+
+.projtext{
+    text-align: center;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.projtable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projobjective{
+    text-align: center;
+}
+
+.projpageimage{
+    display: block;
+    text-align: center;
+}
+
+.projpageimage img{
+    position: relative;
+    max-height: calc(0.75*(100vh - 74px));
+    max-width: 95%;
+}
+
+.imageborder{
+    border: 2px solid #555;
+    border-radius: 25px;
+}
+
+.nvidiashieldheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/finalortho.jpg');
+    /*box-shadow: 0 0 8px 8px white inset;*/
+    background-size: 35%;
+    background-position: right;
+    background-repeat:no-repeat;
+}
+
+.footer{
+    text-align: center;
+}
+
+.collectorheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/collector.jpg');
+    background-size: 50%;
+    background-position: right;
+    background-repeat:no-repeat;
+}
+
+.bearinghousingheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/housingsim.jpg');
+    background-size: 25%;
+    background-position: right;
+    background-repeat:no-repeat;
+}
+
+.arappheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/ARapp/placedlaptop.jpg');
+    background-size: 35%;
+    background-position: right;
+    background-repeat:no-repeat;
+}
+
+.solarsteeringheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/SolarSteering/solarsteering.jpg');
+    background-size: 30%;
+    background-position: right top;
+    background-repeat:no-repeat;
+}
+
+.rcroverheader{
+    background-color: #e6e6db;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/Rover/explodedrovercad.png');
+    background-size: 40%;
+    background-position: right;
+    background-repeat:no-repeat;
+}
+
+.portaprinterheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('images/Xbed3.jpg');
+    width:419;
+    height:468;
+    background-position: right center;
+    background-repeat:no-repeat;
+}
+
+.bearingstakingheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/Bearingstaking/stakingprocess.jpg');
+    background-size: 35%;
+    background-position: right;
+    background-repeat:no-repeat;
+}
+
+.maglevheader{
+    background-color: #050503;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/Maglev/maglev.png');
+    background-size: 30%;
+    background-position:  right;
+    background-repeat:no-repeat;
+}
+
+.tankheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('images/Tank.jpg');
+    width:419;
+    height:468;
+    background-position: right center;
+    background-repeat:no-repeat;
+}
+
+.designathonheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/draweropen.jpg');
+    background-size: 40%;
+    background-position: right center;
+    background-repeat:no-repeat;
+}

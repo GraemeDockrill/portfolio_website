@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+    <!-- lang="en" specifies the language of the page for help with search engines-->
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KLFC03JGT"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6KLFC03JGT');
+        </script>
+        
+        <title>Graeme Dockrill | LED Bike Lights</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+        
+        <meta name="Author" content="Graeme Dockrill">
+    </head>
+
+    <body>
+
+        <div class="ledbikelightsheader">
+            <h2 style="color:#ffffff;">John <span style="color:#2E74B5">Graeme Dockrill</span> | Mechatronics Engineering</h2>
+            <h3 style="color:#ffffff;">3rd Year Student at UBC | graeme.dockrill01@gmail.com</h3>
+        </div>
+
+        <!--Create a menu at the top of the page-->
+        <div id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../resume.html">Resume</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../courses.html">Courses</a>
+            <a href="../pictures.html">Pictures</a>
+            <a href="../about.html">About</a>
+            <a href="https://www.linkedin.com/in/graemedockrill/" target="_blank">Linkedin</a>
+            <a href="mailto:graeme.dockrill01@gmail.com" title="graeme.dockrill01@gmail.com">Email Me</a>
+
+            <div id="secondary">
+                <a class="active">LED Bike Lights</a>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="aprojmain">
+                <h1 style="text-align:center;">LED Bike Lights</h1>
+                <p style="font-size: 125%; text-align: center;">September 2021</p>
+                <hr>
+
+                <!--This stuff is for the project overview header-->
+                <div class="resumerow">
+
+                    <div class="resumecol">
+
+                        <div class="projinfo">
+
+                            <table class="projtable">
+                                <tr>
+                                    <td>
+                                        <h3 style="font-size: 150%; text-align: center;">Project Overview</h3>
+                                    </td>
+                                    <td colspan="2">
+                                        <h3 style="font-size: 150%; text-align: center;">Developed Skills</h3>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ol>
+                                            <li>Cut and soldered LED strips and attached them to my bicycle</li>
+                                            <li>Designed and 3D printed a housing for the battery and Arduino that mounts to the inside of the frame</li>
+                                            <li>Programmed several functions the lights will loop through</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Circuit design</li>
+                                            <li>CAD Design</li>
+                                            <li>Additive Manufacturing</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Soldering</li>
+                                            <li>Arduino Coding</li>
+                                            <li>Prototyping</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projobjective">
+                <h3 style="font-size: 150%; text-align: center;">Objective</h3>
+                <p>With this project, I wanted to make my bicycle stand out a bit more while riding it around, and to greatly improve safety and visibility while riding at night.</p>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half image">
+                        <img src="projectimages/LEDbikelights/testinglights.gif" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Testing LED strips</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Testing the LEDs</h3>
+                        <p>First, I started by testing out the LED light strips to see if they worked properly, and to test communicating with them.</p>
+                        <p>I researched the documentation and libraries required to communicate with the LEDs, then I wrote a small arduino code.</p>
+                        <p>The lights worked properly, but there was an issue with the USB port not being able to provide enough power, so I limited the lights to 1/3 brightness.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Cutting the Lights to Length</h3>
+                        <p>The strips were held against the frame of the bike and cut to length along the soldering lines.</p>
+                        <p>I zip-tied the strips to the frame to get a feel for how the lights would actually sit on the bike and how long the jumper wires would need to be to connect the strips.</p>
+                    </div>
+
+                    <div class="half image" style="display: inline-block;">
+                        <img src="projectimages/LEDbikelights/cutlightstrip.JPG" class="imageborder" style="width:34%">
+                        <img src="projectimages/LEDbikelights/ziptiefront.JPG" class="imageborder" style="width:60%">
+                        <p style="margin-top: 0; text-align: center;">left: cut strip, right: strips zip tied to frame</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half image">
+                        <img src="projectimages/LEDbikelights/striplayout.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">LED strip layout</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Soldering the LEDs</h3>
+                        <p>After measuring the lengths of wire required to connect each strip, I cut some wires to these lengths and began soldering the strips together.</p>
+                        <p>The connection at the fork was especially tricky, as it had to be strong enough to withstand repeated wear from turning the wheel, so a bit of extra wire was added.</p>
+                        <p>After the soldering was completed, the strips were laid out how they would sit on the bike as one final check.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Mounting the LEDs</h3>
+                        <p>Mounting the LED strips on the bike was quite difficult, as the strips needed to be lined up perfectly on the first try and they could not be bent left or right.</p>
+                        <p>The bike was wiped down with a wet towel then dried. After this, the tape cover was peeled off the backside of the strips, and they were mounted one-by-one.</p>
+                        <p>To ensure the strips would not fall off after riding for a while, electrical tape was wrapped around the ends of the strips and the frame.</p>
+                    </div>
+
+                    <div class="half image">
+                        <img src="projectimages/LEDbikelights/glued.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">LED strips on bike</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half image">
+                        <img src="projectimages/LEDbikelights/lightsonbike.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Testing strips with a breadboard</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Testing the Set-Up</h3>
+                        <p>After mounting all the strips, a quick Arduino code was prepared with a function to control the lights and a small circuit was built to test everything.</p>
+                        <p>Amazingly, the entire set-up worked perfectly on the first try.</p>
+                        <p>Now the only thing left to do was design and fabricate a housing to enclose the Arduino/battery and rigidly mount them to the frame.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Designing and Printing the Housing</h3>
+                        <p>I measured the Arduino and the battery I would be using, then I created a sketch for the housing.</p>
+                        <p>After creating a sketch, I modelled the housing using Onshape and printed it out. After printing the housing, I realized a mistake with the height dimension, preventing the battery from fitting inside.</p>
+                        <p>I changed the dimensions that were causing issues and adjusted the design to look a bit better, then I printed it. It fit the Arduino/battery and the frame perfectly.</p>
+                    </div>
+
+                    <div class="half image" style="display: inline-block;">
+                        <img src="projectimages/LEDbikelights/housingsketch.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Sketch of the housing</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third projpageimage">
+                        <img src="projectimages/LEDbikelights/housingv1.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">V1 of the housing</p>
+                    </div>
+
+                    <div class="third projpageimage">
+                        <img src="projectimages/LEDbikelights/v1housing.JPG" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Print of V1 housing</p>
+                    </div>
+
+                    <div class="third projpageimage">
+                        <img src="projectimages/LEDbikelights/housingv2.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">V2 of housing</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half image">
+                        <img src="projectimages/LEDbikelights/workinglights.gif" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Running lights at night</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Bringing it All Together</h3>
+                        <p>With all the pieces completed, they just needed to be connected together to complete the project.</p>
+                        <p>After everything was mounted, any electrical connections were further waterproofed using tightly-wrapped electrical tape.</p>
+                        <p>All thats left to do now is to ride my bike around and test how well the connections hold up under normal riding and bump conditions.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half projpageimage">
+                        <img src="projectimages/LEDbikelights/ridingatnight.gif" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Lights on at night</p>
+                    </div>
+
+                    <div class="half projpageimage">
+                        <img src="projectimages/LEDbikelights/meonbike.gif" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Riding at night with lights</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!--Final remarks-->
+                <div class="resumerow">
+
+                    <div class="resumecol">
+
+                        <div class="projinfo">
+
+                            <h3 style="font-size: 150%; text-align: center;">Final Remarks</h3>
+                            <p">After completing this project, there are a few things that I would have done differently to speed up the process and reduce the amount of iteration needed in the design.</p>
+                            <p>Firstly, I would have someone help me while soldering the strips, as it was quite difficult to hold the strip, the wire, and the iron by yourself.</p>
+                            <p>I would work out how to use an external powersupply that can supply a larger current, so I could run the LEDs at full brightness.</p>
+                            <p>I would have taken more care when dimensioning the housing to that I would not have to design another version.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© Copyright 2022 Graeme Dockrill</p>
+        </div>
+
+        <!--JavaScript for keeping the menu bar attached to the top of the screen-->
+        <script>
+            window.onscroll = function() {StickyBar()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function StickyBar(){
+                if(window.pageYOffset >= sticky){
+                    navbar.classList.add("sticky")
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <script type="module">
+
+            // Import the functions you need from the SDKs you need
+        
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        
+            // TODO: Add SDKs for Firebase products that you want to use
+        
+            // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        
+            // Your web app's Firebase configuration
+        
+            const firebaseConfig = {
+        
+            apiKey: "AIzaSyD9IY42OqZVft0G-RnTfg_gH1neTS5UDN0",
+        
+            authDomain: "portfolio-website-c1dc9.firebaseapp.com",
+        
+            projectId: "portfolio-website-c1dc9",
+        
+            storageBucket: "portfolio-website-c1dc9.appspot.com",
+        
+            messagingSenderId: "94392532432",
+        
+            appId: "1:94392532432:web:d66a8858a2808711830dd5"
+        
+            };
+        
+        
+            // Initialize Firebase
+        
+            const app = initializeApp(firebaseConfig);
+        
+        </script>
+
+    </body>
+</html> 

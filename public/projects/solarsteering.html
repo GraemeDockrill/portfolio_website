@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+    <!-- lang="en" specifies the language of the page for help with search engines-->
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KLFC03JGT"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6KLFC03JGT');
+        </script>
+        
+        <title>Graeme Dockrill | Steering System</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+        
+        <meta name="Author" content="Graeme Dockrill">
+    </head>
+
+    <body>
+
+        <div class="solarsteeringheader">
+            <h2>John <span style="color:#2E74B5">Graeme Dockrill</span> | Mechatronics Engineering</h2>
+            <h3>3rd Year Student at UBC | graeme.dockrill01@gmail.com</h3>
+        </div>
+
+        <!--Create a menu at the top of the page-->
+        <div id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../resume.html">Resume</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../courses.html">Courses</a>
+            <a href="../pictures.html">Pictures</a>
+            <a href="../about.html">About</a>
+            <a href="https://www.linkedin.com/in/graemedockrill/" target="_blank">Linkedin</a>
+            <a href="mailto:graeme.dockrill01@gmail.com" title="graeme.dockrill01@gmail.com">Email Me</a>
+
+            <div id="secondary">
+                <a class="active">Steering System</a>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="aprojmain">
+                <h1 style="text-align:center;">Solar Car Steering System</h1>
+                <p style="font-size: 125%; text-align: center;">September - December 2021</p>
+                <hr>
+
+                <!--This stuff is for the project overview header-->
+                <div class="resumerow">
+
+                    <div class="resumecol">
+
+                        <div class="projinfo">
+
+                            <table class="projtable">
+                                <tr>
+                                    <td>
+                                        <h3 style="font-size: 150%; text-align: center;">Project Overview</h3>
+                                    </td>
+                                    <td colspan="2">
+                                        <h3 style="font-size: 150%; text-align: center;">Developed Skills</h3>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ol>
+                                            <li>Researched and designed a rack and pinion steering system with off-the-shelf components using nominal design values</li>
+                                            <li>Computed hand calculations to determine rack and pinion forces and stress safety factors</li>
+                                            <li>Prepared a formal report and presentation for our peers and instructors</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Machine Design</li>
+                                            <li>Components Specification</li>
+                                            <li>SolidWorks</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Formal Presentations</li>
+                                            <li>Formal Reports</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projobjective">
+                <h3 style="font-size: 150%; text-align: center;">Objective</h3>
+                <p>This project was part of my machine design course MECH 325 and was done in collaboration with UBC Solar's Vehicle Mechanics sub-team to research and design a steering system that may potentially replace the existing one.
+                    Nominal values were provided by the team and a minimum factor of safety of 1.5 was set.</p>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="span text">
+                        <h3 style="font-size: 150%; text-align: center;">Nominal Design Values</h3>
+                        <p>Before designing the rack and pinion system, we split our team of 6 into 3 sub-teams, then collected and assesed our nominal design values for a worst-case max loading scenario, which were:</p>
+                        <ul>
+                            <li>300 lbf external load on the rack</li>
+                            <li>300 degrees wheel rotation for a half-rack travel</li>
+                            <li>Half-rack travel should take 1.5 seconds</li>
+                            <li>20 degree pressure angle on the rack and pinion gear</li>
+                            <li>A minimum safety factor of 1.5 for each component</li>
+                        </ul>
+                        <p>The following work was done very closely with my sub-team member and we both did the same work.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half image">
+                        <img src="projectimages/SolarSteering/gearcalculations.png" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Rack and pinion gear calculations</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Force Analysis</h3>
+                        <p>To start off we created free body diagrams of the rack and pinion gear, and used equations from the course to determine the loads.</p>
+                        <p>We determined the radial and transverse loads on the pinion gear, as well as the steering torque that would be transmitted through the shaft.</p>
+                        <p>Calculating the required pinion diameter to achieve the nominal turning time and wheel travel, we found the diameter to be 7/8".<p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Choosing Closest Pinion Diameter</h3>
+                        <p>Looking at McMaster Carr, we determined the closest pinion gear to be a 1" pitch diameter through hardened steel pinion. This pinion would result in a 265 degree required wheel turn.</p>
+                        <p>We proceeded with analyzing the bending and contact stresses for a couple different gear pitches using an excel spreadsheet.</p>
+                        <p>Unfortunately, the 20 tooth pinion fails with a bending stress safety factor of 0.771, and the 16 tooth pinion fails with a bending stress safety factor of 1.1, which is less than our minimum of 1.5.</p>
+                    </div>
+
+                    <div class="half image">
+                        <img src="projectimages/SolarSteering/1inchpinion.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">McMaster Carr 1" pinion selection</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third projpageimage">
+                        <img src="projectimages/SolarSteering/bendingstress.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Bending stress formula</p>
+                    </div>
+
+                    <div class="third projpageimage">
+                        <img src="projectimages/SolarSteering/contactstress.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Contact stress calculation</p>
+                    </div>
+
+                    <div class="third projpageimage">
+                        <img src="projectimages/SolarSteering/spreadsheet.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Rack and pinion spreadsheet</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third image">
+                        <img src="projectimages/SolarSteering/1andhalfinchpinion.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">McMaster Carr 1.5" pinion selection</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Stepping Up to Next Size</h3>
+                        <p>Since the 1" pinion failed, we chose the next closest pinion at 1.5". Using a 1.5" pinion would result in a 177 degree wheel turn, which is still acceptable.</p>
+                        <p>Using the figures and tables from our text book Shigley's, we did our bending and contact stress calculations on the new pinion.</p>
+                        <p>The 1.5" pinion passed with a bending stress safety factor of 1.558 and a contact stress safety factor of 3.088.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Bill of Materials for Rack and Pinion</h3>
+                        <p>The pinion in our final design came to $45.13 and the rack came to $33.51, totalling $78.64.</p>
+                        <p>After our section was complete, we gave the pinion parameters and the shaft torque to the shafts team so they could select their parts.</p>
+                        <p>After our entire team had completed our design, we prepared both a formal presentation and report.</p>
+                    </div>
+
+                    <div class="third image">
+                        <img src="projectimages/SolarSteering/rackandpinion.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">McMaster Carr rack and pinion selection</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half projpageimage">
+                        <img src="projectimages/SolarSteering/solarsteering.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Final SolidWorks CAD design of the system</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!--Final remarks-->
+                <div class="resumerow">
+
+                    <div class="resumecol">
+
+                        <div class="projinfo">
+
+                            <h3 style="font-size: 150%; text-align: center;">Final Remarks</h3>
+                            <p>After the project was completed, we presented in front of our peers and it went very well. There is not much I would have done differently if I were to do this project again (besides maybe starting a bit earlier in the term).</p>
+                            <p>The UBC Solar Vehicle Mechanics sub-team also said if the funding was available, they would proceed with the design, modifying it where necessary.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© Copyright 2022 Graeme Dockrill</p>
+        </div>
+
+        <!--JavaScript for keeping the menu bar attached to the top of the screen-->
+        <script>
+            window.onscroll = function() {StickyBar()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function StickyBar(){
+                if(window.pageYOffset >= sticky){
+                    navbar.classList.add("sticky")
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <script type="module">
+
+            // Import the functions you need from the SDKs you need
+        
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        
+            // TODO: Add SDKs for Firebase products that you want to use
+        
+            // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        
+            // Your web app's Firebase configuration
+        
+            const firebaseConfig = {
+        
+            apiKey: "AIzaSyD9IY42OqZVft0G-RnTfg_gH1neTS5UDN0",
+        
+            authDomain: "portfolio-website-c1dc9.firebaseapp.com",
+        
+            projectId: "portfolio-website-c1dc9",
+        
+            storageBucket: "portfolio-website-c1dc9.appspot.com",
+        
+            messagingSenderId: "94392532432",
+        
+            appId: "1:94392532432:web:d66a8858a2808711830dd5"
+        
+            };
+        
+        
+            // Initialize Firebase
+        
+            const app = initializeApp(firebaseConfig);
+        
+        </script>
+
+    </body>
+</html> 
