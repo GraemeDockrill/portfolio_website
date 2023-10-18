@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+    <!-- lang="en" specifies the language of the page for help with search engines-->
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KLFC03JGT"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6KLFC03JGT');
+        </script>
+        
+        <title>Graeme Dockrill | Bearing Housing</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+        
+        <meta name="Author" content="Graeme Dockrill">
+    </head>
+
+    <body>
+
+        <div class="highwayracerheader">
+            <h2 style="color:#ffffff;">John <span style="color:#2E74B5">Graeme Dockrill</span> | Mechatronics Engineering</h2>
+            <h3 style="color:#ffffff;">3rd Year Student at UBC | graeme.dockrill01@gmail.com</h3>
+        </div>
+
+        <!--Create a menu at the top of the page-->
+        <div id="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../resume.html">Resume</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../courses.html">Courses</a>
+            <a href="../pictures.html">Pictures</a>
+            <a href="../about.html">About</a>
+            <a href="https://www.linkedin.com/in/graemedockrill/" target="_blank">Linkedin</a>
+            <a href="mailto:graeme.dockrill01@gmail.com" title="graeme.dockrill01@gmail.com">Email Me</a>
+
+            <div id="secondary">
+                <a class="active">Highway Racer</a>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="aprojmain">
+                <h1 style="text-align:center;">Highway Racer Game</h1>
+                <p style="font-size: 125%; text-align: center;">September 2023</p>
+                <hr>
+
+                <!--This stuff is for the project overview header-->
+                <div class="resumerow">
+
+                    <div class="resumecol">
+
+                        <div class="projinfo">
+
+                            <table class="projtable">
+                                <tr>
+                                    <td>
+                                        <h3 style="font-size: 150%; text-align: center;">Project Overview</h3>
+                                    </td>
+                                    <td colspan="2">
+                                        <h3 style="font-size: 150%; text-align: center;">Developed Skills</h3>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <ol>
+                                            <li>Programmed an MSP430FR5739 microcontroller in C to read IMU data and send it over UART to PC</li>
+                                            <li>Created a windows-forms-based game to accept serial data from MCU and use the bytes as user input</li>
+                                            <li>Use user input to control a car in the game that has to avoid the other cars, and tracks highscore</li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>Embedded Design</li>
+                                            <li>MCU Datasheet</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>C# Programming</li>
+                                            <li>UART Protocol</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projobjective">
+                <h3 style="font-size: 150%; text-align: center;">Objective</h3>
+                <p>This project was assigned as part of my class MECH 423, where we were tasked with making something creative using windows forms and the MSP430FR5739 MCU.</p>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third image">
+                        <img src="projectimages/HighwayRacer/msp430.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">MSP430FR5739 Board</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">The Board</h3>
+                        <p>To start with this project I knew I wanted to do some sort of scrolling game where the player controls a car and has to avoid obstacles.</p>
+                        <p>First, I had to figure out what peripherals the MSP430 board has available. Which was done using the Family User Guide and looking at the circuit diagram of the board (shown below).</p>
+                        <p>Then I needed to figure out how to transmit the serial data back to the computer using the UART peripheral.</p>
+                        <p>The MSP430 firmware code is shown below. I wrote custom functions for setting up the perpherals and for sending data.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half projpageimage">
+                        <img src="projectimages/HighwayRacer/circuitdiagram.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">MSP430 circuit diagram</p>
+                    </div>
+
+                    <div class="half projpageimage">
+                        <img src="projectimages/HighwayRacer/mspcodesnippet.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">MSP430 firmware code</p>
+                    </div>
+                </div>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">The Windows Form</h3>
+                        <p>Next, I needed to figure out how to accept serial data in windows forms and how to parse the incoming data bytes for the user input.</p>
+                        <p>This was done by using a serial control in windows forms and setting the baud rate equal to what it was set on the MSP430 board itself.</p>
+                        <p>I found some assets online and modified them for match what I wanted.</p>
+                    </div>
+
+                    <div class="half image">
+                        <img src="projectimages/HighwayRacer/winformscodesnippet.jpg" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Snippet of winforms code</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="third projpageimage">
+                        <img src="projectimages/HighwayRacer/redCar.png" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Player car sprite</p>
+                    </div>
+
+                    <div class="third projpageimage">
+                        <img src="projectimages/HighwayRacer/blueCar.png" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Enemy car sprite</p>
+                    </div>
+
+                    <div class="third projpageimage">
+                        <img src="projectimages/HighwayRacer/greenCar.png" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Enemy car sprite</p>
+                    </div>
+                </div>
+
+                <!--This stuff is for the project content-->
+                <div class="box">
+                    <div class="half image">
+                        <img src="projectimages/HighwayRacer/highwayracer.gif" class="imageborder" style="width:100%">
+                        <p style="margin-top: 0; text-align: center;">Playing Highway Racer</p>
+                    </div>
+
+                    <div class="half text">
+                        <h3 style="font-size: 150%;">Completed Game</h3>
+                        <p>After the game was completed, all that was left was to have some fun!</p>
+                        <p>A gif of me playing Highway Racer can be seen on the left.</p>
+                        <p>The game is extremely fun and I got lost playing it for an hour or so.</p>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <!--Final remarks-->
+                <div class="resumerow">
+
+                    <div class="resumecol">
+
+                        <div class="projinfo">
+
+                            <h3 style="font-size: 150%; text-align: center;">Final Remarks</h3>
+                            <p>This project was extremely fun to complete, as I learned a lot about low-level firmware for microcontrolelrs, and how to read datasheets to accomplish what I need.</p>
+                            <p>I also learned a lot about windows forms and data transmission between a microcontroller and your PC.<p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© Copyright 2023 Graeme Dockrill</p>
+        </div>
+
+        <!--JavaScript for keeping the menu bar attached to the top of the screen-->
+        <script>
+            window.onscroll = function() {StickyBar()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function StickyBar(){
+                if(window.pageYOffset >= sticky){
+                    navbar.classList.add("sticky")
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <script type="module">
+
+            // Import the functions you need from the SDKs you need
+        
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        
+            // TODO: Add SDKs for Firebase products that you want to use
+        
+            // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        
+            // Your web app's Firebase configuration
+        
+            const firebaseConfig = {
+        
+            apiKey: "AIzaSyD9IY42OqZVft0G-RnTfg_gH1neTS5UDN0",
+        
+            authDomain: "portfolio-website-c1dc9.firebaseapp.com",
+        
+            projectId: "portfolio-website-c1dc9",
+        
+            storageBucket: "portfolio-website-c1dc9.appspot.com",
+        
+            messagingSenderId: "94392532432",
+        
+            appId: "1:94392532432:web:d66a8858a2808711830dd5"
+        
+            };
+        
+        
+            // Initialize Firebase
+        
+            const app = initializeApp(firebaseConfig);
+        
+        </script>
+
+    </body>
+</html> 

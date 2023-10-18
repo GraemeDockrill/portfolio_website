@@ -535,3 +535,14 @@ h3{
     background-position: right bottom;
     background-repeat:no-repeat;
 }
+
+.highwayracerheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/HighwayRacer/highway.jpg');
+    background-size: 100%;
+    background-position: right;
+    background-repeat:no-repeat;
+}
