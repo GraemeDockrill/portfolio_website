@@ -524,3 +524,14 @@ h3{
     background-position: right center;
     background-repeat:no-repeat;
 }
+
+.aarmheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/AarmDesign/UCA.jpg');
+    background-size: 40%;
+    background-position: right bottom;
+    background-repeat:no-repeat;
+}
