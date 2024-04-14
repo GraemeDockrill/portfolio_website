@@ -546,3 +546,14 @@ h3{
     background-position: right;
     background-repeat:no-repeat;
 }
+
+.capstoneheader{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: x-large;
+    background-image: url('projects/projectimages/Capstone/device_cross_section.png');
+    background-size: 100%;
+    background-position: right;
+    background-repeat:no-repeat;
+}
